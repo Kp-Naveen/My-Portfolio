@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69a18a0a3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+            <div class="container">
+                <nav class="nav">
+                    <img src="images/Logos.png" alt="" style="width: 200px;margin-left: -45px;">
+
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active-link">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                   <li><a href="#project">Project</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fas1 fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+
+        </nav>
+        <div class="header-text">
+            <p>Front-End Designer</p>
+            <h1>Hi, I'm <span>Naveen</span> From India</h1>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/eduaction.jpg" alt="" class="About" style="width: 450px; height: 80vh;">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="margin-top: 20px;">  I'm Naveen from Ramanathapuram District Tamil Nadu, I completed my Bachelor Degree B.E Computer
+                        Science and Engineering in St. Joseph’s Institute of
+                        Technology with 7.85 CGPA. I am a Strong
+                        communicator and team player. I have Strong
+                        knowledge in Html 5, Css3 ,and JavaScript, Java,
+                        Spring Boot, BootStrap. Additionally, I would
+                        complete my Full Stack Java course in Besant
+                        Technology in Velachery. </p>
+                        <div class="tab-title" style="margin-top: 50px;">
+                            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-link" onclick="opentab('project')">Project</p>
+                            <p class="tab-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contains active-tab" id="skills">
+                            <ul>
+                                <li><span>Full-Stack Developer</span><br>Java, Html, Css, Bootsrap, MySql, JavaScript</li>
+                                <li><span>Back-End</span><br>Java, J2EE, Spring Boot</li>
+                                <li><span>Front-End</span><br>Html, CSS, JavaScript, Angular</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contains" id="project" style="margin-top: -52px;">
+                            <ul>
+                                <li><span>Ecommerce</span><br>Online Course Booking E-Commerce Website</li>
+                                <li><span>Food-Order</span><br>Online Food Ordering Website</li>
+                                <li><span>Book-List</span><br> Using SpringBoot implement a CRUD</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contains" id="education">
+                            <ul>
+                                <li><span>B.E (2019-2023)</span><br> St. Joseph institute of Technology, OMR Chennai</li>
+                                <li><span>HSC (2018-2019)</span><br>Syed Ammal Matriculation Hr. Sec.School</li>
+                                <li><span>SSLC (2016-2017)</span><br> Schwartz Matriculation Hr. Sec.School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="project">
+        <div class="container">
+            <div class="sub-title">My Project</div>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-dumpster"></i>
+                    <h2>Ecommerce</h2>
+                    <p>This Project is Basic Ecommerce Website Project Using jsp, Servelt and Database (Xampp).  Have
+                        a Website of Booking programming language Cousre Website.
+                        </p><a href="https://github.com/Kp-Naveen/Ecommerce1">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>Food Order</h2>
+                    
+                        <p>This is online Food Order Website using Html, Css, Bootstrap and Javascript. This project contains some of
+                            food items to order and check the varity of food in the menu.</p>
+                    <a href="https://kp-naveen.github.io/Food-Order/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Book List</h2>
+                    <p>This is a SpringBoot project of basic Book register project (Add, Edit, Delete) on the eclipse environment
+                        running on java application using tomcat Server ( Maven project ) and using dependencies in pox.xml file</p>
+                    <a href="https://github.com/Kp-Naveen/book">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cert-1.png" alt="">
+                </div>
+                <div class="work">
+                    <img src="images/cert-2.png" alt="">
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>kpnaveen1312@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7339510541</p>
+                    <div class="social">
+                        <a href="https://github.com/Kp-Naveen"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/kp-naveen-1312e/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556763234337"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/KPNaveen4"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/_kp_naveen_/"><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                    <a href="images/mycv.pdf" download class="btn btn2">Download My CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="name" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> <i class="fa-regular fa-copyright"> </i> Copyright Naveen with by Besant Technology</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-link");
+        var tabcontents= document.getElementsByClassName("tab-contains");
+
+        function opentab(tab){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tab).classList.add("active-tab")
+        }
+
+
+
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
